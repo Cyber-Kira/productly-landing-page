@@ -1,0 +1,24 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Kira/productly-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber-Kira/productly-landing-page/issues"
+  },
+  "homepage": "https://github.com/Cyber-Kira/productly-landing-page#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.49.0"
+  }
+}

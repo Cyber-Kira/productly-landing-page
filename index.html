@@ -10,19 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/styles.css" />
     <title>Productly</title>
   </head>
   <body>
     <header class="header">
-      <div class="wrapper">
-        <a href="#" class="logo">Logo</a>
+      <div class="wrapper header__wrapper">
+        <a href="#" class="logo">
+          <object
+            data="./img/logo/Logo.svg"
+            type="image/svg+xml"
+            class="logo-object"
+          >
+            Your browser does not supports SVG
+          </object>
+        </a>
         <nav class="header__navigation">
           <ul class="navigation">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Product</li>
+            <li class="navigation__link">Home</li>
+            <li class="navigation__link">Services</li>
+            <li class="navigation__link">About</li>
+            <li class="navigation__link">Product</li>
           </ul>
         </nav>
         <div class="header__buttons">
@@ -33,7 +41,7 @@
     </header>
     <main class="main">
       <section class="promo">
-        <div class="wrapper">
+        <div class="wrapper promo__wrapper">
           <div class="promo__content">
             <h1>The Design Thinking superpowers</h1>
             <p>
@@ -47,6 +55,7 @@
               </a>
             </div>
           </div>
+          <img src="./img/promo/Image.jpg" alt="" />
         </div>
       </section>
       <section class="tools">
@@ -96,73 +105,73 @@
             <span class="tag tag_bordered">Culture</span>
             <span class="tag tag_bordered">Design</span>
           </div>
-        </div>
-        <div class="layout-3-column">
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/1.jpg" alt="strategies" />
-            <h3>Increasing Prosperity With Positive Thinking</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Art</span>
-              <span class="tag tag_bordered">Design</span>
+          <div class="layout-3-column">
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/1.jpg" alt="strategies" />
+              <h3>Increasing Prosperity With Positive Thinking</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Art</span>
+                <span class="tag tag_bordered">Design</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/2.jpg" alt="strategies" />
-            <h3>Motivation Is The First Step To Success</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Culture</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/2.jpg" alt="strategies" />
+              <h3>Motivation Is The First Step To Success</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Culture</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/3.jpg" alt="strategies" />
-            <h3>Success Steps For Your Personal Or Business Life</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Culture</span>
-              <span class="tag tag_bordered">Design</span>
-              <span class="tag tag_bordered">Art</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/3.jpg" alt="strategies" />
+              <h3>Success Steps For Your Personal Or Business Life</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Culture</span>
+                <span class="tag tag_bordered">Design</span>
+                <span class="tag tag_bordered">Art</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/4.jpg" alt="strategies" />
-            <h3>
-              Success Steps For Your Personal Or Business Life Plus Funny Image
-              on the Back
-            </h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Culture</span>
-              <span class="tag tag_bordered">Design</span>
-              <span class="tag tag_bordered">Art</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/4.jpg" alt="strategies" />
+              <h3>
+                Success Steps For Your Personal Or Business Life Plus Funny
+                Image on the Back
+              </h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Culture</span>
+                <span class="tag tag_bordered">Design</span>
+                <span class="tag tag_bordered">Art</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/5.jpg" alt="strategies" />
-            <h3>Increasing Prosperity With Positive Thinking</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Design</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/5.jpg" alt="strategies" />
+              <h3>Increasing Prosperity With Positive Thinking</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Design</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/1.jpg" alt="strategies" />
-            <h3>Increasing Prosperity With Positive Thinking</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Art</span>
-              <span class="tag tag_bordered">Design</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/1.jpg" alt="strategies" />
+              <h3>Increasing Prosperity With Positive Thinking</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Art</span>
+                <span class="tag tag_bordered">Design</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/2.jpg" alt="strategies" />
-            <h3>Motivation Is The First Step To Success</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Culture</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/2.jpg" alt="strategies" />
+              <h3>Motivation Is The First Step To Success</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Culture</span>
+              </div>
             </div>
-          </div>
-          <div class="strategy block-shadowed">
-            <img src="./img/strategies/3.jpg" alt="strategies" />
-            <h3>Success Steps For Your Personal Or Business Life</h3>
-            <div class="strategies__tags">
-              <span class="tag tab_colored">Culture</span>
-              <span class="tag tag_bordered">Design</span>
-              <span class="tag tag_bordered">Art</span>
+            <div class="strategy block-shadowed">
+              <img src="./img/strategies/3.jpg" alt="strategies" />
+              <h3>Success Steps For Your Personal Or Business Life</h3>
+              <div class="strategies__tags">
+                <span class="tag tab_colored">Culture</span>
+                <span class="tag tag_bordered">Design</span>
+                <span class="tag tag_bordered">Art</span>
+              </div>
             </div>
           </div>
         </div>
