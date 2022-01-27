@@ -31,3 +31,17 @@
     min-width: 117px;
   }
 }
+
+.contact-us__link {
+  @include font($size: 2.5rem, $weight: 400, $height: 26px);
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $color-text;
+    padding-left: 11px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

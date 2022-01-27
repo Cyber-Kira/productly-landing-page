@@ -13,15 +13,3 @@
     color: $color-primary;
   }
 }
-
-.footer-navigation__links {
-  > * {
-    list-style: none;
-    padding: 0 10px;
-    cursor: pointer;
-    @extend %transition;
-    &:hover {
-      color: $color-primary;
-    }
-  }
-}
