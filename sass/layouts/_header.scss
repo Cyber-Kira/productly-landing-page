@@ -8,10 +8,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media-table {
+    padding-left: 24px;
+  }
 }
 
-.header__buttons > .button {
-  margin-left: 14px;
+.header__logo-line {
+  display: flex;
+}
+
+.header__buttons {
+  > .button {
+    margin-left: 14px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .header__buttons > .button:first-child {

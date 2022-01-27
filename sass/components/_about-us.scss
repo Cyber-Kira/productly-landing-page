@@ -14,6 +14,19 @@ $image-gap: 32px;
 
 .employee-container {
   padding-right: $image-gap;
+  @include media-table {
+    flex-direction: column;
+    align-items: center;
+    > .employee {
+      width: 75%;
+    }
+  }
+  @include media-mobile {
+    flex-direction: column;
+    > .employee {
+      width: 100%;
+    }
+  }
 }
 
 .employee {

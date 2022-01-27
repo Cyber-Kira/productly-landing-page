@@ -1,6 +1,23 @@
 .contact-us {
   background-color: $color-background;
-  padding: 62px 82px;
+  padding: 62px 0;
+  @include media-table {
+    text-align: center;
+  }
+}
+
+.contact-us-container {
+  @include media-table {
+    flex-direction: column;
+  }
+}
+
+.contact-us__content {
+  max-width: 520px;
+  @include media-table {
+    max-width: 100%;
+    margin-bottom: 52px;
+  }
 }
 
 .contact-us__form {
@@ -24,18 +41,31 @@
 
 .contact-us__line {
   margin-bottom: 19px;
+  @include media-mobile {
+    flex-direction: column;
+    margin-bottom: 0;
+    > * {
+      margin-bottom: 19px;
+    }
+  }
 }
 
 .contact-us__button {
   > * {
     min-width: 117px;
   }
+  @include media-mobile {
+    margin-top: 24px;
+  }
 }
 
 .contact-us__link {
-  @include font($size: 2.5rem, $weight: 400, $height: 26px);
   display: flex;
   align-items: center;
+  @include font($size: 2.5rem, $weight: 400, $height: 26px);
+  @include media-table {
+    justify-content: center;
+  }
   a {
     text-decoration: none;
     color: $color-text;
