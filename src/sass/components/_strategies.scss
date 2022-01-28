@@ -15,8 +15,14 @@
 
 .strategies__tags {
   margin-bottom: 31px;
+  cursor: pointer;
   @include media-table {
     justify-content: center;
+  }
+  .tag {
+    &:not(&_selected):hover {
+      background-color: $color-background;
+    }
   }
 }
 
@@ -36,8 +42,16 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  @extend %transition;
   @include media-table {
     overflow: hidden;
+  }
+  &_hidden {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    transform: translateY(-1.2%) scale(1.02);
   }
 }
 
@@ -52,4 +66,34 @@
 .strategy__title {
   margin: 0 0 29px;
   text-align: left;
+}
+
+.strategy__tags {
+  .tag {
+    border-radius: 90px;
+    padding: 5px 14px;
+    @include font($size: 1.3rem, $height: 2.8rem, $weight: 400);
+    background-color: $color-background;
+  }
+}
+
+.article-modal__content {
+  .strategy__image {
+    width: 100%;
+    @include media-table {
+      position: static;
+    }
+  }
+
+  .strategy__date {
+    @include font($size: 1.3rem, $weight: 400);
+  }
+
+  .strategy_name {
+    margin-bottom: 10px;
+  }
+
+  .strategy__text {
+    margin: 0 0 12px;
+  }
 }
